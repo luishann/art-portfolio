@@ -10,8 +10,10 @@
   </head>
 
   <body>
-  <%= image_tag "JenniferIp_GIFProject4Final.gif", :id => "title-gif" %>
-  <h1>Jen Laiting</h1>
+  	<header id="head">
+  		<%= image_tag "JenniferIp_GIFProject4Final.gif", :id => "title-gif" %>
+  		<h1>Jen Laiting</h1>
+  	</header>
 	
   	<nav id="nav-menu">
   		<ul id="nav-list">
@@ -23,6 +25,8 @@
   		</ul>
   	</nav>
 
-    <%= yield %>
+  	<main>
+    	<%= yield %>
+    </main>
   </body>
 </html>
