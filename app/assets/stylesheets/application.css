@@ -20,6 +20,10 @@ html, body {
 	font-size: 1em;
 }
 
+main {
+	margin: 8% 20% 0 20%;
+}
+
 img#title-pic {
 	height: 89%;
 	position: absolute;
@@ -30,7 +34,7 @@ img#title-pic {
 }
 
 #nav-menu {
-	z-index: 5;
+	z-index: 100;
 	border-bottom: solid pink thin;
 	position: fixed;
 	width: 100%;
@@ -50,7 +54,7 @@ ul#nav-list {
 #nav-list li{
 	display: inline;
 	float: right;
-	padding: 2.6% 2% 0.6% 2%;
+	padding: 2.4% 2% 0.6% 2%;
 }
 
 #nav-list li a {
@@ -65,7 +69,7 @@ h1 {
 	color: black;
   font-family: 'Poiret One', 'Maven Pro', sans-serif;
   font-size: 2em;
-  padding: 1.5% 3% 0 1%;
+  padding: 1% 5% 0% 1%;
   background-color: white;
   z-index: 10;
 }
@@ -82,11 +86,56 @@ h1 {
 	height: 125px;
 	float:left;
 	margin: -2% 0 0 0;
-	padding-left: 7%;
+	padding-left: 10%;
 }
 
 header#head {
 	position: fixed;
-	z-index: 10;
+	z-index: 200;
 	width:  30%;
+	top: 0;
+	left: 0;
 }
+
+img.large-pic {
+	height: 700px;
+}
+
+img.thumbnail {
+	width: 200px;
+	/*position: relative;
+	/*clip: rect(0px, 100px,100px,0px);*/
+}
+
+a.thumb-link {
+	display: block;
+	height: 200px;
+	width: 200px;
+	overflow:hidden;
+	position: relative;
+	color: white;
+}
+
+a.thumb-link p {
+	visibility: hidden;
+	position: absolute;
+	margin: 0;
+  top:50%;
+  left:50%; 
+  text-align:center;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+}
+
+a.thumb-link .overlay {
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+  background-color: rgba(18, 0, 122, 0.3);
+}
+
+a.thumb-link:hover p{
+	visibility: visible;
+}
+
+
