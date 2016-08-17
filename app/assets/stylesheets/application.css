@@ -102,18 +102,20 @@ img.large-pic {
 }
 
 img.thumbnail {
-	width: 200px;
+	width: 300px;
+	margin: -20px 0 0 -50px;
 	/*position: relative;
 	/*clip: rect(0px, 100px,100px,0px);*/
 }
 
 a.thumb-link {
-	display: block;
+	display: inline-block;
 	height: 200px;
 	width: 200px;
 	overflow:hidden;
 	position: relative;
 	color: white;
+	margin: 2%;
 }
 
 a.thumb-link p {
@@ -131,7 +133,7 @@ a.thumb-link .overlay {
   width: 200px;
   height: 200px;
   z-index: 5;
-  background-color: rgba(18, 0, 122, 0.3);
+  background-color: rgba(14, 0, 92, 0.7);
 }
 
 a.thumb-link:hover p{
