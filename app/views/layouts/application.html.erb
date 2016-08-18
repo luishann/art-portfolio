@@ -11,22 +11,27 @@
 
   <body>
   	<header id="head">
+      <div class="flex-item">
       <%=link_to root_path do %>
   		  <%= image_tag "JenniferIp_GIFProject4Final.gif", :id => "title-gif" %>
   		  <h1>Jen Laiting</h1>
       <% end %>
-  	</header>
-	
-  	<nav id="nav-menu">
-  		<ul id="nav-list">
-  		<!-- http://stackoverflow.com/questions/25537881/how-can-i-make-my-navbar-appear-on-every-page-in-my-rails-app -->
-  			<li><a href="#">Motion</a></li>
+      </div>
+      <div class="flex-item">
+      <nav id="nav-menu">
+      <ul id="nav-list">
+      <!-- http://stackoverflow.com/questions/25537881/how-can-i-make-my-navbar-appear-on-every-page-in-my-rails-app -->
+        <li><a href="#">Motion</a></li>
+        <li class="diamond">&#9670;</li>
         <li><%=link_to "Illustration", illustrations_path%></li>
-  			<!--<li><a href="#">Illustration</a></li>-->
-  			<li><a href="#">Game</a></li>
-  			<li><a href="#">About</a></li>
-  		</ul>
-  	</nav>
+        <li class="diamond">&#9670;</li>
+        <li><a href="#">Game</a></li>
+        <li class="diamond">&#9670;</li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    </div>
+  	</header>
 
   	<main>
     	<%= yield %>

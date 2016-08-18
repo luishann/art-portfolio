@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/*window.onload = function() {
+  var pathname = window.location.pathname;
+	if (pathname == '/' || '') {
+		$('body').addClass('gradient');
+		$('nav').removeClass('white');
+	} else {
+		$('body').removeClass('gradient');
+		$('nav').addClass('white');
+	}
+
+	$("#title-pic").css({"left":"2000px"}).animate({"left":"0px"}, "slow");
+	init();
+};*/
