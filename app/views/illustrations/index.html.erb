@@ -1,11 +1,13 @@
 <!--<div class="nav-placeholder"> &nbsp;</div>-->
-<!--<div class="peach">-->
-<% @illustrations.each do |illustration| %>
-	<!--<p><%= illustration.title %></p>-->
-		<%=link_to illustration, :class => "thumb-link" do %>
-			<%= image_tag illustration.path, :class => "thumbnail" %>
-			<p class="thumb-overlay"><%= illustration.title %></p>
-			<p class="overlay"> </p>
-		<% end %>
-<% end %>
-<!--</div>-->
+<div class="thumbnail-container">
+	<% @illustrations.each do |illustration| %>
+		<!--<p><%= illustration.title %></p>-->
+		<div class="thumbnail-item">
+			<%=link_to illustration, :class => "thumb-link" do %>
+				<%= image_tag illustration.path, :class => "thumbnail" %>
+				<p class="thumb-overlay"><%= illustration.title %></p>
+				<p class="overlay"> </p>
+			<% end %>
+		</div>
+	<% end %>
+</div>
